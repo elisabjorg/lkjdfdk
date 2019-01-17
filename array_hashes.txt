@@ -1,0 +1,59 @@
+Exercise A
+
+stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
+
+# #1
+stops.push("Edinburgh Waverly")
+# #2
+stops.unshift("Glasgow Queen St")
+# #3
+stops.insert(4, "Polmont")
+# #4
+# "Linlithgow"[5]
+# #5
+stops.delete("Livingston")
+# #6
+stops.delete_at(2)
+# #7
+stops.length
+# #8
+# stops.at(2)
+# stops.at(-6)
+#9
+stops.reverse!
+#10
+for station in stops
+  p station
+end
+
+
+Exercise B
+
+1. p users["Jonathan"][:twitter]
+2. p users ["Erik"][:home_town]
+3. p users ["Erik"][:lottery_numbers]
+4. p users ["Avril"][:pets][0][:name]
+5. p users ["Erik"][:lottery_numbers].min
+6. p users["Avril"][:lottery_numbers].select {|num| num.even? }
+7. p users ["Erik"][:lottery_numbers].push(7)
+8. p users ["Erik"][:home_town]["Linlithgow"] = "Edinburgh"
+9. p users ["Erik"][:pets] <<
+{
+  :name => "Fluffy",
+  :species => "dog"
+}
+10. p users = Hash.new
+users["Elisa"] = {}
+
+Exercise C
+
+1. p united_kingdom[1][:capital] = ["Cardiff"]
+2. p united_kingdom <<
+{
+  name: "Northern Ireland",
+  population: 181100,
+  capital: "Belfast"
+}
+3. for name in united_kingdom
+  p name[:name]
+end
